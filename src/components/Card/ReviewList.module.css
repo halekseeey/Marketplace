@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.header {
+    display: flex;
+    box-sizing: border-box;
+    height: 40px;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer {
+    button {
+        width: 100%;
+    }
+}
+
+.mark {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+}

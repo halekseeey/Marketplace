@@ -1,0 +1,15 @@
+.loader {
+    border-radius: 50%;
+    border: 5px solid #E77B0E;
+    border-bottom-color: transparent;
+    animation: load 1s linear infinite;
+}
+
+@keyframes load {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}

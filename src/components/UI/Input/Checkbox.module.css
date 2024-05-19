@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    width: max-content;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+
+    input {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 18px;
+        height: 18px;
+        border-radius: 3px;
+        background-color: #DEE9E6;
+        transition: background-color 0.3s;
+    }
+
+    path {
+        stroke-dashoffset: 23;
+        stroke-dasharray: 23;
+        opacity: 0;
+        transition: stroke-dashoffset 0.3s, opacity 0.3s;
+    }
+
+    input:focus-visible + .checkbox {
+        box-shadow: inset 0 0 0 2px #1B6D56;
+    }
+
+    input:checked + .checkbox {
+        background-color: #1B6D56;
+
+        path {
+            opacity: 1;
+            stroke-dashoffset: 0;
+        }
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .asButton {
+        border: 2px solid var(--color-text);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        padding: 0 10px;
+        border-radius: 15px;
+    }
+
+    input:checked + .asButton {
+        background-color: $primary;
+        color: $color-text-dark;
+    }
+
+    input:focus-visible + .asButton {
+        border: 2px solid #1B6D56;
+    }
+}

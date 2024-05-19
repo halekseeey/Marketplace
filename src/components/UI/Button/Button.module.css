@@ -1,0 +1,91 @@
+.base {
+    color: var(--color-link);
+    border: none;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    border-radius: 50vh;
+    padding: 0 10px;
+    gap: 5px;
+    width: max-content;
+    height: 40px;
+    outline: none;
+
+    &:focus-visible {
+        box-shadow: 0 0 0 2px var(--color-shadow);
+    }
+
+    svg {
+        fill: var(--color-link);
+        transition: fill 0.2s;
+    }
+}
+
+.color {
+    &:hover {
+        color: var(--color-active-link);
+
+        svg {
+            fill: var(--color-active-link);
+        }
+    }
+}
+
+.scale {
+    @media (hover: hover) {
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    @media (hover: none) {
+        &:active {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.small {
+    font-size: 14px;
+}
+
+.medium {
+    height: 50px;
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+.large {
+    height: 60px;
+    padding: 0 25px;
+    font-size: 22px;
+}
+
+.default {
+    background-color: var(--color-button);
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.outlined {
+    border: solid 1.5px;
+}
+
+.contained {
+    background-color: var(--color-active-link);
+    color: white;
+
+    svg {
+        fill: var(--color-text);
+    }
+}
+
+.error {
+    background-color: var(--error);
+}

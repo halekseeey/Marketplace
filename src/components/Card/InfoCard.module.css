@@ -1,0 +1,64 @@
+.container {
+    background-color: var(--color-navbar);
+    border-radius: 18px;
+    position: relative;
+
+    table {
+        padding: 20px 15px;
+
+        td {
+            vertical-align: top;
+            padding: 0 0 0 10px;
+            font-size: 13px;
+            opacity: 0.6;
+        }
+    }
+
+    .like {
+        position: absolute;
+        padding: 10px !important;
+        right: 15px;
+        top: 15px;
+        background-color: var(--color-button);
+        box-shadow: 0 0 10px var(--color-shadow);
+
+        svg {
+            fill: var(--color-text);
+        }
+    }
+
+    .buy {
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        border-radius: 18px;
+        background-color: var(--color-button);
+        box-shadow: 0 0 30px var(--color-shadow);
+
+        @media (width <= 768px) {
+            padding: 0;
+            height: 50px;
+        }
+
+        button {
+            height: 40px;
+
+            @media (max-width: 768px) {
+                width: 50%;
+                height: 50px;
+            }
+        }
+
+        .price {
+            opacity: 0.9;
+            margin-left: 10px;
+
+            @media (max-width: 768px) {
+                margin-left: 20px;
+            }
+        }
+    }
+}

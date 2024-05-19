@@ -1,0 +1,10 @@
+.register {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-navbar);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}

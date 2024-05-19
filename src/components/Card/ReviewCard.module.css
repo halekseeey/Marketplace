@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: var(--color-button);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+
+    button {
+        padding: 0;
+
+        &:first-child {
+            svg {
+                fill: var(--color-text);
+            }
+        }
+
+        &:last-child {
+            svg {
+                stroke: var(--color-text);
+                fill: none;
+            }
+        }
+    }
+}

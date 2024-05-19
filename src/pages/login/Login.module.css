@@ -1,0 +1,28 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--color-navbar);
+    gap: 20px;
+    align-items: center;
+
+    a {
+        color: #a2a2ff;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    .button {
+        align-self: flex-end;
+        padding: 0 30px;
+    }
+}
+
+.input {
+    width: 100%;
+}

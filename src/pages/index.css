@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&family=Rubik:wght@300;500&display=swap');
+
+:root {
+    --color-active-link: #1b6d56;
+    --input-bg: #dde9e6;
+    --error: #992626;
+    --pending: #FFDB8B;
+}
+
+.dark {
+    --color-bg: #1f2127;
+    --color-text: white;
+    --color-text-invert: #1f2127;
+    --color-link: #fff;
+    --color-navbar: #2d3039;
+    --color-shadow: #1f2127;
+    --color-button: #3b3f4a;
+    --switcher-color: #428673;
+    --bear-background: #a16b2d;
+    --bear-top-clip: #d99a5b;
+    --bear-bottom-clip: #E77B0E;
+    --bear: #4f2500;
+    --button-opacity: rgba(255, 255, 255, 0.5);
+    --textarea: #3B3F4A;
+}
+
+.light {
+    --color-bg: #f5f5f5;
+    --color-text: #1f2127;
+    --color-text-invert: white;
+    --color-link: #1f2127;
+    --color-navbar: #fff;
+    --color-shadow: #ededed;
+    --switcher-color: #dde9e6;
+    --color-button: white;
+    --bear-background: #a16b2d;
+    --bear-top-clip: #d99a5b;
+    --bear-bottom-clip: #E77B0E;
+    --bear: #4f2500;
+    --button-opacity: rgba(45, 48, 57, 0.5);
+    --textarea: #fff;
+}
+
+#__next {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
+    background-color: var(--color-bg);
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Rubik', sans-serif;
+        color: var(--color-text);
+    }
+
+    a,
+    p,
+    label,
+    input,
+    div,
+    textarea,
+    button {
+        font-family: 'Nunito Sans', sans-serif;
+        padding: 0;
+        margin: 0;
+        color: var(--color-text);
+    }
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0%);
+    text-decoration: none;
+}

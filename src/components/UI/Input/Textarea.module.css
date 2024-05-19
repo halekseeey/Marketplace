@@ -1,0 +1,29 @@
+.base {
+    background-color: var(--textarea);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    box-sizing: border-box;
+    resize: none;
+    color: var(--color-text);
+
+    &:focus-visible {
+        box-shadow: 0 0 0 2px var(--color-navbar), 0 0 0 4px var(--input-bg);
+    }
+
+    &::-webkit-scrollbar {
+        width: 15px;
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 99px;
+        border: 5px solid black;
+        background-clip: padding-box;
+        background-color: #b7c2bd;
+    }
+}

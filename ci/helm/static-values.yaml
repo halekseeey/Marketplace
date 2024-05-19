@@ -1,0 +1,14 @@
+replicaCount: 3
+imagePullSecrets:
+  - name: local-registry
+image:
+  repository: pme.marketplace.local/1246/marketplace_frontend
+  tag: master
+  pullPolicy: Always
+
+vault:
+  enabled: false
+
+settings:
+  Env:
+    BACKEND_URL: http://staging-backend-marketplace-backend.staging-marketplace-backend.svc.cluster.local:8000

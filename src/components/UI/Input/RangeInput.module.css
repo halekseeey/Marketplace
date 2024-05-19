@@ -1,0 +1,97 @@
+.wrapper {
+  position: relative;
+  padding-top: 15px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.inputs_field {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+
+  input {
+    max-width: 40%;
+  }
+}
+
+.inputWrapper {
+  width: calc(100% + 12px);
+  margin: 0 calc(12px / -2);
+  position: absolute;
+  bottom: 100%;
+}
+
+.controlWrapper {
+  width: 100%;
+  position: absolute;
+  bottom: 100%;
+}
+
+.input {
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  pointer-events: none;
+  appearance: none;
+  opacity: 0;
+  z-index: 3;
+  padding: 0;
+
+  &:focus::-webkit-slider-runnable-track, &::-moz-range-track, &::-ms-track {
+    appearance: none;
+    background: transparent;
+    border: transparent;
+  }
+
+  &::-webkit-slider-thumb, &::-ms-thumb, &::-moz-range-thumb {
+    appearance: none;
+    pointer-events: all;
+    width: 12px;
+    height: 12px;
+    border: 0 none;
+    cursor: grab;
+    background-color: red;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+}
+
+.rail {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 6px;
+  border-radius: 3px;
+  background: #dde9e6;
+}
+
+.innerRail {
+  position: absolute;
+  height: 100%;
+  background: #E77B0E;
+}
+
+.control {
+  width: 12px;
+  height: 12px;
+
+  border: solid 4px white;
+  border-radius: 50%;
+
+  position: absolute;
+  background: #E77B0E;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.inp {
+  background-color: #3B3F4A;
+  border-radius: 10px;
+  color: white;
+}

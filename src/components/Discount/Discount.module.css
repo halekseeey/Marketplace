@@ -1,0 +1,91 @@
+.container {
+    width: 100%;
+    border-radius: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    gap: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 30px var(--color-shadow);
+
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+}
+
+.image_wrapper {
+    height: 148px;
+    width: 167px;
+    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    z-index: -1;
+
+    svg {
+        height: 148px;
+        width: 168px;
+    }
+}
+
+.grey {
+    background-color: var(--bear-top-clip);
+
+    &_description,
+    &_action,
+    &_title,
+    &_button {
+        color: var(--color-text-invert);
+    }
+
+    &_button {
+        width: min-content;
+        color: var(--color-text-invert) !important;
+        outline: var(--color-text-invert) 3px solid !important;
+    }
+
+    & svg {
+        path:first-child {
+            fill: var(--bear-background);
+        }
+
+        path:nth-child(2) {
+            fill: var(--bear-bottom-clip);
+        }
+
+        path:nth-child(3) {
+            fill: var(--bear-top-clip);
+        }
+
+        path:last-child {
+            fill: var(--bear);
+            stroke: var(--bear);
+        }
+    }
+}
+
+.green {
+    background-color: var(--bear);
+
+    &_description,
+    &_action,
+    &_title,
+    &_button {
+        color: white !important;
+    }
+
+    &_button {
+        width: min-content;
+        outline: white 3px solid !important;
+    }
+}

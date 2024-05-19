@@ -1,0 +1,16 @@
+.input {
+    background-color: var(--input-bg);
+    border-radius: 50vh;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    color: #1f2127;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+
+    &:focus-visible {
+        box-shadow: 0 0 0 2px var(--color-navbar), 0 0 0 4px var(--input-bg);
+    }
+}
